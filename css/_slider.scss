@@ -198,3 +198,28 @@
         object-fit: cover;
     }
   }
+
+
+
+
+  /* Initial state of elements */
+.hover-animation .col-lg-6 img,
+.hover-animation .col-lg-6 h1,
+.hover-animation .col-lg-6 p,
+.hover-animation .btn-primary {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Hover effect */
+.hover-animation:hover .col-lg-6 img {
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+.hover-animation:hover .col-lg-6 h1,
+.hover-animation:hover .col-lg-6 p {
+    opacity: 0.8; /* Slight fading */
+}
+
+.hover-animation:hover .btn-primary {
+    transform: translateY(-5px); /* Button lift effect */
+}
