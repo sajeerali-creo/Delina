@@ -54,18 +54,16 @@
                 <img src="img/logo.svg">
             </a>
             <button class="btn-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
-            aria-controls="offcanvasWithBothOptions"><i class="ti ti-menu-3"></i></button>
+                aria-controls="offcanvasWithBothOptions"><i class="ti ti-menu-3"></i></button>
         </header>
     </section>
 
-
-   
-
     <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
         aria-labelledby="offcanvasWithBothOptionsLabel">
-        
         <div class="offcanvas-body p-5 text-center d-flex justify-content-between flex-column">
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <a href="#" data-bs-dismiss="offcanvas" aria-label="Close"><i
+                    class="ti ti-square-rounded-x text-white h1"></i></a>
             <ul class="menus">
                 <li>
                     <a href="#" class="active">HOME</a>
@@ -88,8 +86,91 @@
     </div>
 
 
-    <section class="bg-banner">
-
+    <section class="bg-banner padding-top-header">
+        <div class="container">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <img src="img/eli.png">
+                                <h1>Crunch Into Flavor<br class="d-none d-lg-block">
+                                    Explore Our Irresistible<br class="d-none d-lg-block">
+                                    Chips Collection!</h1>
+                                <p>
+                                    Discover the perfect crunch in every bite with our premium, flavorful chips. From
+                                    classic favorites to bold new tastes, there's a chip for every craving!
+                                </p>
+                                <div class="d-flex mt-5">
+                                    <a href="#" class="btn-primary">View All Products&nbsp;<i class="ti ti-chevrons-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <img src="img/eli-hero.png" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <img src="img/eli.png">
+                                <h1>Crunch Into Flavor<br class="d-none d-lg-block">
+                                    Explore Our Irresistible<br class="d-none d-lg-block">
+                                    Chips Collection!</h1>
+                                <p>
+                                    Discover the perfect crunch in every bite with our premium, flavorful chips. From
+                                    classic favorites to bold new tastes, there's a chip for every craving!
+                                </p>
+                                <div class="d-flex mt-5">
+                                    <a href="#" class="btn-primary">View All Products&nbsp;<i class="ti ti-chevrons-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <img src="img/eli-hero.png" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <img src="img/eli.png">
+                                <h1>Crunch Into Flavor<br class="d-none d-lg-block">
+                                    Explore Our Irresistible<br class="d-none d-lg-block">
+                                    Chips Collection!</h1>
+                                <p>
+                                    Discover the perfect crunch in every bite with our premium, flavorful chips. From
+                                    classic favorites to bold new tastes, there's a chip for every craving!
+                                </p>
+                                <div class="d-flex mt-5">
+                                    <a href="#" class="btn-primary">View All Products&nbsp;<i class="ti ti-chevrons-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <img src="img/eli-hero.png" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button> -->
+            </div>
+        </div>
     </section>
 
 
@@ -103,59 +184,6 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
-    </script>
-    <script>
-        $(window).scroll(function () {
-            var scroll = $(window).scrollTop();
-
-            if (scroll >= 350) {
-                $(".header").addClass("top-fixed");
-            } else {
-                $(".header").removeClass("top-fixed");
-            }
-        });
-        $(document).ready(function () {
-            (function () {
-                var showChar = 400;
-                var ellipsestext = "...";
-
-                $(".truncate").each(function () {
-                    var content = $(this).html();
-                    if (content.length > showChar) {
-                        var c = content.substr(0, showChar);
-                        var h = content;
-                        var html =
-                            '<div class="truncate-text" style="display:block">' +
-                            c +
-                            '<span class="moreellipses">' +
-                            ellipsestext +
-                            '&nbsp;&nbsp;<a href="" class="moreless more">more</a></span></span></div><div class="truncate-text" style="display:none">' +
-                            h +
-                            '<a href="" class="moreless less">Less</a></span></div>';
-
-                        $(this).html(html);
-                    }
-                });
-
-                $(".moreless").click(function () {
-                    var thisEl = $(this);
-                    var cT = thisEl.closest(".truncate-text");
-                    var tX = ".truncate-text";
-
-                    if (thisEl.hasClass("less")) {
-                        cT.prev(tX).toggle();
-                        cT.slideToggle();
-                    } else {
-                        cT.toggle();
-                        cT.next(tX).fadeToggle();
-                    }
-                    return false;
-                });
-                /* end iffe */
-            })();
-
-            /* end ready */
-        });
     </script>
 
 </body>

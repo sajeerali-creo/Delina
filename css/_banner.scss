@@ -1,0 +1,15 @@
+.carousel-indicators{
+    margin-bottom: -3rem;
+}
+.carousel-indicators [data-bs-target]{
+    border-top:inherit;
+    border-bottom:inherit;
+    border-radius: 8px;
+    width: 10px;
+    height: 10px;
+    background-color: var(--black);
+}
+.carousel-indicators .active{
+    width: 30px;
+    background-color: var(--black);
+}
