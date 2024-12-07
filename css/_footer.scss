@@ -1,0 +1,35 @@
+footer {
+    background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 100%), #222222;
+    .menu-footer{
+        gap:24px;
+        a{
+            text-transform: uppercase;
+            color: var(--white);
+            letter-spacing: 0.2rem;
+            font-size: 13px;
+        }
+    }
+    .social{
+        a{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 48px;
+            height: 48px;
+            border-radius: 160px;
+            background-color: #222222;
+            color: var(--white);
+            font-size: 24px;
+            transition: all 0.3s ease-out;
+            &:hover{
+                background-color: #000000;
+            }
+        }
+    }
+    .strp{
+        background-color: #0F0F0F;
+        color: #999;
+        font-size: 13px;
+        margin-top: 55px;
+    }
+}

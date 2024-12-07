@@ -39,6 +39,10 @@ h1, h2, h3, h4, h5, h6{
     font-weight: 600;
 }
 
+p{
+    line-height: 2rem !important;
+}
+
 
 // dark
 .dark{
@@ -73,4 +77,8 @@ h1, h2, h3, h4, h5, h6{
 }
 .moreless{
     color: var(--primary);
+}
+
+.fs-42{
+    font-size: 42px;
 }

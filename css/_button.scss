@@ -22,17 +22,17 @@
     }
 }
 
-.band{
+.band {
     border-radius: 35px;
-    background: rgb(144,195,34);
-    background: -moz-linear-gradient(278deg, rgba(144,195,34,1) 0%, rgba(215,221,131,1) 51%, rgba(170,255,169,1) 100%);
-    background: -webkit-linear-gradient(278deg, rgba(144,195,34,1) 0%, rgba(215,221,131,1) 51%, rgba(170,255,169,1) 100%);
-    background: linear-gradient(278deg, rgba(144,195,34,1) 0%, rgba(215,221,131,1) 51%, rgba(170,255,169,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#90c322",endColorstr="#aaffa9",GradientType=1);
+    background: rgb(144, 195, 34);
+    background: -moz-linear-gradient(278deg, rgba(144, 195, 34, 1) 0%, rgba(215, 221, 131, 1) 51%, rgba(170, 255, 169, 1) 100%);
+    background: -webkit-linear-gradient(278deg, rgba(144, 195, 34, 1) 0%, rgba(215, 221, 131, 1) 51%, rgba(170, 255, 169, 1) 100%);
+    background: linear-gradient(278deg, rgba(144, 195, 34, 1) 0%, rgba(215, 221, 131, 1) 51%, rgba(170, 255, 169, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#90c322", endColorstr="#aaffa9", GradientType=1);
     padding: 8px 24px;
 }
 
-.btn-action{
+.btn-action {
     border: none;
     min-width: 100px;
     padding: 16px 18px;
@@ -49,16 +49,18 @@
     font-weight: 600;
     letter-spacing: 0.2em;
     text-align: center;
+
     &:hover {
         background-color: #202020;
         color: var(--white);
     }
-    i{
+
+    i {
         font-size: 18px;
     }
 }
 
-.btn-menu{
+.btn-menu {
     background-color: var(--black);
     color: var(--white);
     border-radius: 8px;
@@ -72,3 +74,48 @@
 }
 
 
+.btn-border {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 18px;
+    height: 48px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    color: #000000;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 600;
+
+    &:hover {
+        background-color: var(--black);
+        color: var(--white);
+    }
+
+    i {
+        font-size: 18px;
+    }
+}
+
+.bt-phone {
+    width: 296px;
+    height: 57px;
+    border: 1px solid rgb(255 255 255 / 24%);
+    border-radius: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    transition: all 0.3s ease-out;
+    &:hover {
+        background-color: var(--black);
+        color: var(--white);
+    }
+
+}
+a:hover{
+    color: #fff;
+}

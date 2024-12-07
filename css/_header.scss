@@ -4,6 +4,7 @@
     background: linear-gradient(90deg, rgba(255, 255, 255, 0.3) 0%, #FFFFFF 49%, rgba(255, 255, 255, 0.3) 100%);
     border: 2px solid #E1E1E1;
     border-radius: 20px;
+    transition: all 0.3s ease-out;
 }
 .menus{
     display: flex;
@@ -15,6 +16,10 @@
             font-size: 14px;
             text-transform: uppercase;
             letter-spacing: 0.2em;
+            transition: all 0.3s ease-out;
+            &:hover{
+                opacity: 0.5;
+            }
         }
     }
     .active{
@@ -37,6 +42,25 @@
         li{
             a{
                 color: #FFFFFF;
+            }
+        }
+    }
+}
+
+.inner-bg{
+    min-height: 180px!important;
+    padding-bottom: 0px!important;
+    padding-top: 0px!important;
+}
+
+.dark{
+    background: #000;
+    background-color: #000;
+    transition: all 0.3s ease-out;
+    .menus{
+        li{
+            a{
+                color: var(--white)!important;
             }
         }
     }

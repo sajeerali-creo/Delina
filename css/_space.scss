@@ -1,9 +1,15 @@
 .padding-top {
-    padding-top: 120px;
+    padding-top: 55px;
+    @media (min-width: 992px) {
+        padding-top: 120px;
+    }
 }
 
 .padding-bottom {
-    padding-bottom: 120px;
+    padding-bottom: 55px;
+    @media (min-width: 992px) {
+        padding-bottom: 120px;
+    }
 }
 
 .padding-top-header{
